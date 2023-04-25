@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+
+    <!-- Meus estilos -->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Font-awesome - icones -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonte do google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|PT+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrao 0-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="css/materialize.css" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+
+    
+  </head>
+
+  <body>
+    <nav class="black">
+      <div class="nav-wrapper">
+        <a href="index.html"><i class="fas fa-home fa-3x"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a data-toggle="modal" data-target="#myModal"
+              ><i class="fas fa-user"> Minha conta</i></a
+            >
+          </li>
+          <li>
+            <a href="carrinho.html" target="_blank"
+              ><i class="fas fa-shopping-cart"> Meus Pedidos</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="Images/slider1.jpg" class="legal"/>
+          <div class="caption center-align"></div>
+        </li>
+        <li>
+          <img src="Images/slider2.jpg" class="legal"/>
+          <div class="caption center-align"></div>
+        </li>
+        <li>
+          <img src="Images/slider3.jpg" class="legal" />
+          <div class="caption center-align"></div>
+        </li>
+        <li>
+          <img src="Images/slider4.jpg" class="legal" />
+          <div class=" captionleft-align"></div>
+        </li>
+      </ul>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 image">
+          <a href="produto.html" target="_blank"
+            ><img
+              src="Images/cam1.jpg"
+              class="aligncenter img-fluid hoverable materialboxed"
+          /></a>
+        </div>
+
+        <div class="col-md-4 image">
+          <a href="produto.html" target="_blank"
+            ><img
+            src="Images/cam2.jpg"
+              class="aligncenter img-fluid hoverable materialboxed"
+          /></a>
+        </div>
+
+        <div class="col-md-4 image">
+          <a href="produto.html" target="_blank"
+            ><img
+            src="Images/cam3.jpg"
+              class="aligncenter img-fluid hoverable materialboxed"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <img
+      src="Images/post1.jpg"
+      width="1250"
+      class="aligncenter img-fluid hoverable materialboxed imgberma"
+    />
+
+    <br /><br />
+
+    <hr />
+
+    <div class="container">
+      <div class="row justify-content-md-left">
+        <div class="col-md-6">
+          <b class="fconosco">Fale Conosco</b><br />
+
+          <br /><br />
+
+          <fieldset>
+            <form
+              name="form1"
+              action="https://formsubmit.co/joseadsilva@fac.pe.senac.br"
+              method="POST"
+            >
+              <label class="labelnegrito">Nome</label>
+              <input type="text" id="nome" name="nome" required />
+
+              <br />
+
+              <label class="labelnegrito">E-mail</label>
+              <input type="text" id="email" name="email" required />
+              <br />
+
+              <label class="labelnegrito">Telefone</label>
+              <input type="text" id="telefone" name="telefone" required />
+              <br />
+
+              <label class="labelnegrito">Coméntario</label>
+              <textarea
+                placeholder="Mensagem"
+                cols="50"
+                rows="50"
+                maxlength="500"
+              ></textarea
+              ><br />
+              <br />
+
+              <button class="btn btn-danger" onclick="enviar()">Enviar</button>
+            </form>
+          </fieldset>
+        </div>
+
+        <div class="col-md-6">
+          <iframe
+            src="Images/compra.jpg"
+            
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <hr />
+
+    <div class="container">
+      <div class="row justify-content-md-left">
+        <div class="col-md-4">
+          <b class="fconosco">Menu</b><br /><br />
+          <u
+            ><a href="produto.html" target="_blank" class="itensmenu"
+              >Produtos</a
+            ></u
+          ><br />
+        </div>
+
+        <div class="col-md-4">
+          <b class="fconosco">Sobre Nós</b><br />
+          <i class="fas fa-phone"><u class="itensmenu"> Telefone:</u></i>
+          <b>(81) 9999-9999</b><br />
+          <i class="fas fa-map-marker-alt"
+            ><u class="itensmenu"> Endereço:</u></i
+          >
+          <b>R. do Pombal, 57 - Recife, Pernambuco</b><br />
+          <i class="fas fa-envelope"><u class="itensmenu"> Email:</u></i>
+          <b>joseadsilva@fac.pe.senac.br</b>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.facebook.com/groups/382923421724548" target="”_blank”"
+            ><img
+              src="Images/face.png"
+              class="img-fluid hoverable"
+              width="55" /></a
+          ><b class="labelnegrito"> Facebook</b><br /><br />
+          <a href="https://www.instagram.com/senacpe/" target="_blank"
+            ><img
+              src="Images/insta.jpg"
+              class="img-fluid hoverable"
+              width="55" /></a
+          ><b class="labelnegrito"> Instagram</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inicio Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center" id="myModalLabel">Login</h4>
+          </div>
+
+          <div class="modal-body">
+            <p>E-mail</p>
+            <input type="text" id="mailID" />
+
+            <p>Senha</p>
+            <input type="text" id="senhaID" />
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              onclick="logar()"
+              data-dismiss="modal"
+            >
+              Login
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Modal -->
+
+    <!-- js -->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slider({
+          interval: 6000,
+          height: 450,
+        });
+      });
+    </script>
+
+    <script>
+      function logar() {
+        alert("Login Efetuado !");
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".modal").on("hidden.bs.modal", function () {
+          console.log("fechar modal");
+          $(this).find("input:text").val("");
+        });
+      });
+    </script>
+
+    <script>
+      function enviar() {
+        alert("Enviado !");
+      }
+    </script>
+  </body>
+  <script>
+    var saudacao = "";
+    var data = new Date();
+    var hora = data.getHours();
+  
+    if (hora >= 0 && hora < 12) {
+      saudacao = "Bom dia!";
+    } else if (hora >= 12 && hora < 18) {
+      saudacao = "Boa tarde!";
+    } else {
+      saudacao = "Boa noite!";
+    }
+  
+    alert(saudacao);
+  </script>
+</html>
